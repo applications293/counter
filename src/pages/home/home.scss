@@ -1,3 +1,51 @@
 page-home {
 
+    
+    .left{
+        width: 160px;
+        height: 50%; /*to complete the screen*/
+       /* background-color: antiquewhite;*/
+        float: left;
+        text-align: center;
+    }
+    
+    .right{
+        width: 160px;/*takes the remaining space*/
+        height: 50%;
+        /*background-color:darkseagreen;*/
+        flex-grow: 1;
+        float: right;
+        text-align: center;
+    }
+
+.vl {
+    display: block;
+    width:2px;
+    background-color:rgb(223, 232, 240);
+    position:absolute;
+    top:20px;
+    bottom:51%;
+    left:180px;
+}
+    
+.btn{
+  
+    bottom: 0px;
+    position: fixed;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0px;
+    line-height: normal;
+    width:100%;
+    
+}
+
+.btns{
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 60px;
+}
+
 }

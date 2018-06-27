@@ -1,18 +1,44 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+  <ion-navbar color='orange'> <!--transparent-->
+  
+    <ion-title>Court Counter App</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+ <!-- <h3>Court Counter</h3>-->
 
-  <p>
+  <div class="left">
+    <br>
+    <b>TEAM A</b>
+ 
+    <h1>{{ Ascore }}</h1>
+
+    <button class="btns" ion-button block color="orange" (click)="Aadd('a')">+3 POINTS</button>
+    <button class="btns" ion-button block color="orange" (click)="Aadd('aa')">+2 POINTS</button>
+    <button class="btns" ion-button block color="orange" (click)="Aadd('aaa')">FREE THROW</button>
+    
+  </div>
+  <div class="vl"></div>
+
+  <div class="right">
+    <br>
+    <b>TEAM B</b>
+
+    <h1>{{ Bscore }}</h1>
+    
+    <button class="btns" ion-button block color="orange" (click)="Badd('b')">+3 POINTS</button>
+    <button class="btns" ion-button block color="orange" (click)="Badd('bb')">+2 POINTS</button>
+    <button class="btns" ion-button full color="orange" (click)="Badd('bbb')">FREE THROW</button>
+    
+   </div>
+
+  <div class="btn"><button ion-button (click)="clear()" color='orange'>RESET</button></div>
+  
+</ion-content>
+
+<!--<p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+  <button ion-button secondary menuToggle>Toggle Menu</button>-->
